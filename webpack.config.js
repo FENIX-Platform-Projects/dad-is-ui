@@ -11,7 +11,7 @@ var distFolderPath = "dist",
 module.exports = sections.map(function (section) {
 
     var entry = {};
-    entry[section] = ["./src/js/" + section + ".js"];
+    entry[section] = toBeTranspiled() ? ["./src/js/" + section + ".jsx"] : ["./src/js/" + section + ".js"];
 
     return {
 
@@ -26,8 +26,6 @@ module.exports = sections.map(function (section) {
         resolve: {
             root: Path.resolve(__dirname),
             alias: {
-                'bootstrap-table': Path.join(__dirname, 'node_modules/bootstrap-table/dist/bootstrap-table.min.js'),
-                'handlebars': Path.join(__dirname, 'node_modules/handlebars/dist/handlebars.js'),
                 'jquery': Path.join(__dirname, 'node_modules/jquery/dist/jquery')
             }
         },
@@ -38,6 +36,7 @@ module.exports = sections.map(function (section) {
                     {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
                     {test: /\.css$/, loader: "style-loader!css-loader"}
                 ),
+                {test: /\.jsx?/, loader: 'babel'},
                 {test: /\.hbs$/, loader: "handlebars-loader"},
                 {test: /\.json/, loader: "json-loader"},
                 {test: /\.png$/, loader: "url-loader?limit=100000"},
@@ -45,8 +44,6 @@ module.exports = sections.map(function (section) {
                 {test: /\.svg/, loader: "file-loader?name=[name].[ext]&limit=100000"},
                 {test: /\.gif/, loader: "file-loader?name=[name].[ext]&limit=100000"},
 
-                //Bootstrap loader
-                {test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery'},
                 {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/font-woff"},
                 {test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/font-woff"},
                 {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/octet-stream"},
@@ -87,7 +84,7 @@ function getOutput() {
         case "develop" :
             output = {
                 path: Path.join(__dirname, devFolderPath),
-                filename: "[name].js"
+                filename: toBeTranspiled() ? "[name].jsx" : "[name].js"
             };
             break;
         default :
@@ -131,6 +128,10 @@ function isEnvironment(env) {
 
 function getEnvironment() {
     return process.env.NODE_ENV;
+}
+
+function toBeTranspiled() {
+    return process.env.TRANSPILED;
 }
 
 // sections
