@@ -2,8 +2,8 @@
         <div class="row">
          <div class="col-xs-12">
             <div>
-                 <h3 class="indicator-title"> {{breedDiversityTitle}}</h3>
-                 <span>{{breedDiversityDescription}}</span>
+                 <h3 class="indicator-title" id="breedDiversity-title"> {{breedDiversity_title}}</h3>
+                 <span id="breedDiversity-description">{{breedDiversity_description}}</span>
              </div>
          </div>
         </div>
@@ -22,6 +22,36 @@
                                 <li><span class="marker internationalAvian"></span> {{internationalAvian}}</li>
                                 <li><span class="marker regionalAvian"></span> {{regionalAvian}}</li>
                                 <li><span class="marker localAvian"></span> {{localAvian}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<div id="animalGeneticResources" class="tab-pane">
+        <div class="row">
+         <div class="col-xs-12">
+            <div>
+                 <h3 class="indicator-title" id="animalGeneticResources-title"> {{animalGeneticResources_title}}</h3>
+                 <span id="animalGeneticResources-description">{{animalGeneticResources_description}}</span>
+             </div>
+         </div>
+        </div>
+        <div class="row">
+               <div class="col-xs-8">
+                <div class="row">
+                    <div class="col-xs-6">
+                            <div id="animalGeneticResources-stackedBar"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="animalGeneticResources-stackedBar-legend" class="legend">
+                            <ul class="list-unstyled">
+                                <li><span class="marker notAtRisk"></span> {{notAtRisk}}</li>
+                                <li><span class="marker atRisk"></span> {{atRisk}}</li>
+                                <li><span class="marker unknown"></span> {{unknown}}</li>
                             </ul>
                         </div>
                     </div>

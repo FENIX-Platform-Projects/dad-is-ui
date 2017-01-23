@@ -6,8 +6,9 @@ define([
     "../config/home/config",
     "../html/home/template.hbs",
     "./charts/home/breedDiversity",
+    "./charts/home/animalGeneticResources",
     "../nls/labels"
-], function ($, log, _, C, PAGEC, template, pieBreedDiversity, labels) {
+], function ($, log, _, C, PAGEC, template, pieBreedDiversity, stackedBarAnimalGeneticResources, labels) {
 
     "use strict";
 
@@ -17,7 +18,11 @@ define([
 
             charts : {
                 BREED_DIVERSITY_CONTAINER_ID: "breedDiversity-pie",
-                BREED_DIVERSITY_LABELS_ID : "breedDiversityPie"
+                //Not Used
+                BREED_DIVERSITY_LABELS_ID : "breedDiversityPie",
+                ANIMAL_GENETIC_CONTAINER_ID: "animalGeneticResources-stackedBar",
+                //Not Used
+                ANIMAL_GENETIC_LABELS_ID : "animalGeneticResourcesStackedBar"
             }
         };
 
@@ -72,6 +77,16 @@ define([
         this.breedDiversity = new pieBreedDiversity({
             elID: s.charts.BREED_DIVERSITY_CONTAINER_ID,
             labelsId : s.charts.BREED_DIVERSITY_LABELS_ID,
+            cache: C.cache,
+            environment: C.environment,
+            uid: "",
+            selected_items: {"item" : ""},
+            language: this.lang.toUpperCase()
+        });
+
+        this.animalGeneticResources = new stackedBarAnimalGeneticResources({
+            elID: s.charts.ANIMAL_GENETIC_CONTAINER_ID,
+            labelsId : s.charts.ANIMAL_GENETIC_LABELS_ID,
             cache: C.cache,
             environment: C.environment,
             uid: "",

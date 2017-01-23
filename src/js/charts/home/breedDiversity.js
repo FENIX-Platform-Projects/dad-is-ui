@@ -29,8 +29,6 @@ define([
             cache: this.cache
         });
 
-        this._setHTMLvariables();
-
         //TO CHANGE: now it's skipping the ajax call to get the resource
         this._onSuccess();
 
