@@ -6,13 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "echo \"Error: please specify a valid section to develop [e.g. npm run dev:analysis]\" && exit 1",
-    "dev:base": "cross-env SECTIONS=base NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "dev:home": "cross-env SECTIONS=home NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
-    "dev:reports": "cross-env TRANSPILED=true SECTIONS=reports NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
-    "build": "cross-env SECTIONS=base,home NODE_ENV=production webpack --display-error-details ",
-    "build:base": "cross-env SECTIONS=base NODE_ENV=production webpack --display-error-details ",
+    "build": "cross-env SECTIONS=home NODE_ENV=production webpack --display-error-details ",
     "build:home": "cross-env SECTIONS=home NODE_ENV=production webpack --display-error-details ",
-    "build:stats": "cross-env SECTIONS=base,home NODE_ENV=production webpack --display-error-details --profile --json  > stats.json"
+    "build:stats": "cross-env SECTIONS=home NODE_ENV=production webpack --display-error-details --profile --json  > stats.json"
   },
   "repository": {
     "type": "git",

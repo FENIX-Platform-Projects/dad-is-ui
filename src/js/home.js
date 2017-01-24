@@ -4,11 +4,11 @@ define([
     "underscore",
     "../config/config",
     "../config/home/config",
-    "../html/home/template.hbs",
+    //"../html/home/template.hbs",
     "./charts/home/breedDiversity",
     "./charts/home/animalGeneticResources",
     "../nls/labels"
-], function ($, log, _, C, PAGEC, template, pieBreedDiversity, stackedBarAnimalGeneticResources, labels) {
+], function ($, log, _, C, PAGEC, pieBreedDiversity, stackedBarAnimalGeneticResources, labels) {
 
     "use strict";
 
@@ -36,7 +36,7 @@ define([
 
         this._validateConfig();
 
-        this._attach();
+        //this._attach();
 
         this._initVariables();
 
@@ -51,15 +51,15 @@ define([
             alert("Please specify a valid LANGUAGE in config/config.js");
         }
 
-        if ($(s.EL).length === 0) {
-            alert("Please specify a valid container [" + s.EL + "]");
-        }
+        // if ($(s.EL).length === 0) {
+        //     alert("Please specify a valid container [" + s.EL + "]");
+        // }
 
     };
 
     Home.prototype._initVariables = function () {
 
-        this.$el = $(s.EL);
+        //this.$el = $(s.EL);
 
         this.lang = C.lang.toLowerCase();
         this.environment = C.environment;
@@ -145,7 +145,6 @@ define([
 
         //GIFT CSS
         require("../css/dadis.css");
-
 
     };
 
