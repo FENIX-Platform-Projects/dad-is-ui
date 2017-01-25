@@ -9216,11 +9216,11 @@ button_new_2:before {
     cursor: pointer;
     vertical-align: middle;
     margin: 10px; }
-  .fx-sandbox.fao-holder .btn-floating i {
+  .fx-sandbox.fao-holder .btn-floating span {
     width: inherit;
     display: inline-block;
     text-align: center;
-    line-height: 37px;
+    line-height: 36px;
     color: white; }
   .fx-sandbox.fao-holder .btn-floating.btn-link i {
     color: #333; }
