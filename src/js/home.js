@@ -121,14 +121,14 @@ define([
         require("../css/sandboxed-bootstrap.css");
 
         //dropdown selector
-        require("../../node_modules/selectize/dist/css/selectize.bootstrap3.css");
-        //tree selector
-        require("../../node_modules/jstree/dist/themes/default/style.min.css");
-        //range selector
-        require("../../node_modules/ion-rangeslider/css/ion.rangeSlider.css");
-        require("../../node_modules/ion-rangeslider/css/ion.rangeSlider.skinHTML5.css");
-        //time selector
-        require("../../node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css");
+        // require("../../node_modules/selectize/dist/css/selectize.bootstrap3.css");
+        // //tree selector
+        // require("../../node_modules/jstree/dist/themes/default/style.min.css");
+        // //range selector
+        // require("../../node_modules/ion-rangeslider/css/ion.rangeSlider.css");
+        // require("../../node_modules/ion-rangeslider/css/ion.rangeSlider.skinHTML5.css");
+        // //time selector
+        // require("../../node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css");
 
 
         // fenix-ui-filter
