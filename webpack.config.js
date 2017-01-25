@@ -36,7 +36,7 @@ module.exports = sections.map(function (section) {
                     {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
                     {test: /\.css$/, loader: "style-loader!css-loader"}
                 ),
-                {test: /\.jsx?/, loader: 'babel'},
+                {test: /\.jsx$/, loader: 'babel'},
                 {test: /\.hbs$/, loader: "handlebars-loader"},
                 {test: /\.json/, loader: "json-loader"},
                 {test: /\.png$/, loader: "url-loader?limit=100000"},
