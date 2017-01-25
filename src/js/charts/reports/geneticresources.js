@@ -8,7 +8,7 @@ $(function () {
             text: 'Proposed indicator 2.5.1. of the Sustainable Development Goals on the numbers of national breed populations with material stored in a cryobank by region, based on 128 country reports'
         },
         xAxis: {
-            categories: ['Africa', 'Asia', 'Europe and the Caucasus', 'Latin America & the Caribbean', 'Near and Middle East', 'North America', 'Soutwest Pacific']
+            categories: ['Africa', 'Asia', 'Europe and the Caucasus', 'Latin America & the Caribbean', 'Near and Middle East', 'North America', 'Southwest Pacific']
         },
         yAxis: {
             min: 0,
