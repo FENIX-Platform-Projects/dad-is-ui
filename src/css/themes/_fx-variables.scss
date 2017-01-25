@@ -25,7 +25,7 @@ $fx-text-smalltitle-bold: normal normal 700 10px/normal 'Roboto';
 
 // Fenix Colors
 $fenix-standard-blue: rgba(53, 166, 220, 1);
-$fx-cool-blue: #0d6cac;
+$fx-cool-blue: red;
 $fx-cool-blue-alt: #2f9a8f;
 
 
@@ -36,7 +36,7 @@ $fx-main-color-lighter: lighten($fx-cool-blue, 42%); // Ideal for hovers
 $fx-main-color-darker: darken($fx-cool-blue, 20%); // Ideal for hovers
 
 $fenix-text: #333;
-$fenix-secondary-text: #999999;
+$fenix-secondary-text: #666666;
 
 $fenix-light-gray: #dddddd;
 $fenix-dark-blue: #4c647f;
@@ -50,7 +50,7 @@ $superlight-gray: #ececec;
 
 $buttons: #2ab896;
 
-$fenix-hr: #D2D0D0;
+$fenix-hr: #e1e1e1;
 $fenix-light-hr: #cccccc;
 
 $fenix-thin-border: 1px solid $fenix-hr;

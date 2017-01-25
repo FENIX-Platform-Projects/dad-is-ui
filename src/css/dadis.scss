@@ -21,6 +21,7 @@
   @import 'pages/home';
 
   @import 'themes/fx-material-theme-light';
+  @import 'themes/material-theme';
   @import 'themes/unified-style';
   @import 'themes/typo3-fix';
 
@@ -60,6 +61,8 @@
   float: right;
   color: grey;
 }
+
+
 
 .panel-heading a.collapsed:after {
   content: "\e080";

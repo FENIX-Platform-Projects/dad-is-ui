@@ -1,5 +1,35 @@
-// Standard Fenix Theme
+// Typography
 
+
+
+a{
+  color: $fx-cool-blue;
+}
+
+
+
+h1{
+  color: $fx-cool-blue;
+}
+
+h2{
+  color: desaturate( $fx-cool-blue, 30% );
+}
+
+h3{
+  color: desaturate( $fx-cool-blue, 50% );
+}
+
+h4{
+  color: desaturate( $fx-cool-blue, 70% );
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small{
+  color: $fx-cool-blue;
+}
+
+
+// Standard Fenix Theme
 
 .fx-text-primary-color{
   color: $fx-cool-blue;
@@ -14,8 +44,6 @@
   color: white;
   border-color: darken($fx-cool-blue, 10%);
   background-color: $fx-cool-blue;
-
-
 
   &:hover {
     color: white;
@@ -270,3 +298,13 @@ input[type="checkbox"]:checked + label {
 @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba($fx-cool-blue, 0);}}
 @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba($fx-cool-blue, 0);}}
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba($fx-cool-blue, 0);}}
+
+
+
+
+
+
+
+
+
+
