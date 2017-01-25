@@ -64,7 +64,15 @@ module.exports = sections.map(function (section) {
                 chunks: [section],
                 template: devFolderPath + "/" + section + ".template.html"
             }))
-        ])
+        ]),
+
+        devServer:  {
+            contentBase: devFolderPath,
+            colors: true,
+            progress: true,
+            inline: true,
+            historyApiFallback: true
+        }
     }
 });
 
@@ -84,6 +92,7 @@ function getOutput() {
         case "develop" :
             output = {
                 path: Path.join(__dirname, devFolderPath),
+                publicPath: '/',
                 filename: toBeTranspiled() ? "[name].jsx" : "[name].js"
             };
             break;

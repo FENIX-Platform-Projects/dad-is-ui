@@ -1,15 +1,12 @@
 import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import todoApp from './reports/reducers/index.jsx'
-import App from './reports/components/App.jsx'
+import {render} from 'react-dom'
+import {Provider} from 'react-redux'
+import configureStore from './reports/configureStore.jsx'
+import Root from './reports/components/Root.jsx'
 
-let store = createStore(todoApp)
+const store = configureStore();
 
 render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
+    <Root store={store}/>,
     document.getElementById('reports')
-)
+);

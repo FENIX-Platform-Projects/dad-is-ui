@@ -3,12 +3,12 @@ import Footer from './Footer.jsx'
 import AddTodo from '../containers/AddTodo.jsx'
 import VisibleTodoList from '../containers/VisibleTodoList.jsx'
 
-const App = () => (
+const App = ({params}) => (
     <div>
         <AddTodo />
-        <VisibleTodoList />
+        <VisibleTodoList /> {/* <VisibleTodoList filter={params.filter || 'all'} /> */}
         <Footer />
     </div>
-)
+);
 
 export default App
