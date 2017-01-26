@@ -7,10 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "echo \"Error: please specify a valid section to develop [e.g. npm run dev:home]\" && exit 1",
     "dev:home": "cross-env SECTIONS=home NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
+    "dev:data": "cross-env SECTIONS=data NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "dev:demoreports": "cross-env SECTIONS=demoreports NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "dev:reports": "cross-env TRANSPILED=true SECTIONS=reports NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "dev:maps": "cross-env TRANSPILED=true SECTIONS=maps NODE_ENV=develop webpack-dev-server --port 3001 --content-base dev --display-error-details --progress --color --inline --hot",
-    "build": "cross-env SECTIONS=home NODE_ENV=production webpack --display-error-details ",
+    "build": "cross-env SECTIONS=home,data,demoreports NODE_ENV=production webpack --display-error-details ",
     "build:home": "cross-env SECTIONS=home NODE_ENV=production webpack --display-error-details ",
     "build:stats": "cross-env SECTIONS=home NODE_ENV=production webpack --display-error-details --profile --json  > stats.json"
   },

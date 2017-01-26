@@ -145,7 +145,7 @@ define([
         //meta viewer requirements
         // require("jquery-treegrid-webpack/css/jquery.treegrid.css");
 
-        //GIFT CSS
+        //DAD-IS CSS
         require("../css/dadis.css");
 
     };
