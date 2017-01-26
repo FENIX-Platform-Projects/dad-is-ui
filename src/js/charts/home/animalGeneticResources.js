@@ -92,6 +92,7 @@ define([
         var chartConfig = {
             chart: {
                 type: 'bar',
+                margin: [0, 0, 0, 0],
                 events: {
                     load: function (event) {
                         self._trigger("ready");

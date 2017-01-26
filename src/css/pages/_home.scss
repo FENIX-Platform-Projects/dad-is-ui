@@ -1,23 +1,66 @@
 /* Homepage */
 
 
-.dadis-home-chart-card{
+.dadis-home-charts{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dadis-home-chart-card .card-content{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.dadis-home-chart-card, .dadis-home-whatis-card{
+
+
+  h3{
+    font-size: 18px;
+  }
+
 
   .card-up{
     background-color: white;
     border-bottom: 1px solid $fenix-hr;
     padding: 15px;
 
-    h3{
-      border: 0 !important;
-      font-size: 18px;
-    }
+
 
     p{
       color: $fenix-secondary-text;
+      font-size: 12px;
     }
 
   }
+
+
+
+}
+
+.dadis-home-whatis-card{
+
+  background-color: red;
+
+  h3{
+    margin-top: 0;
+  }
+
+  .card-up {
+    border-bottom: 0;
+    padding: 0;
+
+
+    .dadis-home-whatis-img{
+      background-image: url(img/whatis.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 70px;
+    }
+
+
+
+  }
+
 
 
 
