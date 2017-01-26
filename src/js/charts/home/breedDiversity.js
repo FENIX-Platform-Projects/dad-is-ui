@@ -220,7 +220,6 @@ define([
                 },
 
                 formatter: function () {
-                    console.log(this);
                     return this.key + ': <b>' + this.y + '</b>';
                 }
             },

@@ -146,7 +146,7 @@ define([
 
             tooltip: {
                 formatter: function () {
-                    return '<b>' + this.y + '%</b>';
+                    return this.point.series.name + ': <b>' + this.y + '</b>';
                 }
             },
 
