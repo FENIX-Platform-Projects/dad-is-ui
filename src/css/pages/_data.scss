@@ -1,5 +1,57 @@
 /* Datapage */
 
+// Entry Point
+
+.dadis-entry-point-card{
+  background-color: #d6e4eb;
+
+  .card-content{
+    background-color: transparent;
+  }
+
+  h3{
+    font-size: 16px;
+  }
+
+  a{
+    color: $fenix-text;
+
+    &:hover, &:focus, &:active{
+      color: $fenix-text;
+    }
+
+  }
+
+}
+
+.dadis-entry-point-img{
+  height: 124px;
+  width: 124px;
+  background-color: $fenix-hr;
+  @include fx-border-radius(50%);
+  background-position: 50% 50%;
+  @include animate();
+  margin: 0 auto;
+
+  &:hover
+
+
+  &.bsc{
+    background-image: url(img/bsc.png);
+  }
+
+  &.sr{
+    background-image: url(img/sr.png);
+  }
+
+  &.tb{
+    background-image: url(img/tb.png);
+  }
+
+}
+
+
+// Charts
 
 .dadis-data-charts{
   padding-left: 0;
@@ -13,7 +65,7 @@
 
 }
 
-.dadis-data-chart-card, .dadis-data-animals-card{
+.dadis-data-chart-card, .dadis-data-browse-card{
 
 
   h3{
@@ -39,7 +91,7 @@
 
 }
 
-.dadis-data-animals-card{
+.dadis-data-browse-card{
 
   background-color: blue;
 
@@ -52,13 +104,40 @@
     padding: 0;
 
 
-    .dadis-data-animals-img{
+    .dadis-data-browse-img{
       background-image: url(img/animals-500-252.jpg);
       background-repeat: no-repeat;
       background-position: 50% 50%;
       height: 182px;
     }
 
+    .dadis-data-report-img{
+      background-image: url(img/nature-q-c-500-252-7.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 182px;
+    }
+
+    .dadis-data-transboudaryBreed-img{
+      background-image: url(img/animals-500-252.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 182px;
+    }
+
+    .dadis-data-crossTable-img{
+      background-image: url(img/nature-q-c-500-252-7.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 182px;
+    }
+
+    .dadis-data-dataAnalysis-img{
+      background-image: url(img/animals-500-252.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 182px;
+    }
   }
 
 }
