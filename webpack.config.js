@@ -76,7 +76,7 @@ function getOutput() {
         case "production" :
             output = {
                 path: Path.join(__dirname, distFolderPath),
-                publicPath: 'http://fenixrepo.fao.org/dad-is-ui/',
+                publicPath: 'http://fenixrepo.fao.org/dad-is/',
                 filename: "[name]/" + packageJson.name + '.[name].min.js',
                 chunkFilename: "[name]/" + 'chunk-[id].' + packageJson.name + '.[name].min.js'
             };
