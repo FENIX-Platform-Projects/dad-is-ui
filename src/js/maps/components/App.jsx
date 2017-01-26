@@ -1,11 +1,10 @@
 import React from 'react'
-import { render } from 'react-dom';
-import { Map, TileLayer } from 'react-leaflet';
+import WMSMap from '../containers/WMSMap.jsx'
 
 const App = () => (
     <div>
-        Hello react-leaflet
+        <WMSMap />
     </div>
-)
+    )
 
 export default App
