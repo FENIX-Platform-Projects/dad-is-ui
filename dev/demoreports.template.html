@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.813em !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body id="dadis" style="background-color:#f0f0f0;">
+    <div class="fx-sandbox fao-holder">
+        <h3>Select a report</h3>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a data-toggle="pill" href="#statereporting">State of reporting</a></li>
+            <li><a data-toggle="pill" href="#breeddiversity">Breed diversity</a></li>
+            <li><a data-toggle="pill" href="#riskstatus">Risk status of animal genetic resources</a></li>
+            <li><a class="disabled">Trends in breed status and diversity</a></li>
+            <li><a data-toggle="pill" href="#geneticresources">Animal genetic resources reflected in the Suistainable Development</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="statereporting" class="tab-pane fade">
+                <h3>State of reporting</h3>
+                <div id="chart_statereporting"></div>
+            </div>
+            <div id="breeddiversity" class="tab-pane fade">
+                <h3>Breed diversity</h3>
+                <div id="chart_breeddiversity"></div>
+            </div>
+            <div id="riskstatus" class="tab-pane fade">
+                <h3>Risk status of animal genetic resources</h3>
+                <div id="chart_riskstatus"></div>
+            </div>
+            <div id="trends" class="tab-pane fade">
+                <h3>Trends in breed status and diversity</h3>
+                <div id="chart_trends"></div>
+                <h2>Currently in progress</h2>
+            </div>
+            <div id="geneticresources" class="tab-pane fade">
+                <h3>Animal genetic resources reflected in the Suistainable Development</h3>
+                <div id="chart_geneticresources"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

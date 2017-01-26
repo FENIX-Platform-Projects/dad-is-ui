@@ -1,5 +1,8 @@
-$(function () {
-    Highcharts.chart('container', {
+define( function () {
+
+    "use strict";
+
+    return {
         chart: {
             type: 'column'
         },
@@ -19,7 +22,7 @@ $(function () {
                 enabled: true,
                 style: {
                     fontWeight: 'bold',
-                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                    color: 'gray'
                 }
             }
         },
@@ -42,7 +45,7 @@ $(function () {
                 stacking: 'normal',
                 dataLabels: {
                     enabled: true,
-                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+                    color: 'white'
                 }
             }
         },
@@ -55,6 +58,7 @@ $(function () {
         }, {
             name: 'Number of national breed populations for which sufficient material is stored',
             data: [3, 4, 4, 2, 5, 1, 5]
-        }]
-    });
+        }],
+        credits: false
+    }
 });

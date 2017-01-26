@@ -26,7 +26,8 @@ module.exports = sections.map(function (section) {
         resolve: {
             root: Path.resolve(__dirname),
             alias: {
-                'jquery': Path.join(__dirname, 'node_modules/jquery/dist/jquery')
+                'jquery': Path.join(__dirname, 'node_modules/jquery/dist/jquery'),
+                'highcharts-pie-plugin' : Path.join(__dirname, 'src/js/charts/pieTitle'),
             }
         },
 
