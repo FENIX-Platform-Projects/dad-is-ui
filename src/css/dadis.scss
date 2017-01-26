@@ -20,13 +20,16 @@
   @import 'base/fx-typography';
 
 
-  //pages
-  @import 'pages/home';
+
 
   @import 'themes/fx-material-theme-light';
   @import 'themes/material-theme';
   @import 'themes/unified-style';
   @import 'themes/typo3-fix';
+
+  //pages
+  @import 'pages/home';
+
 
 }
 

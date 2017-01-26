@@ -163,6 +163,9 @@ define([
                     load: function (event) {
                         self._trigger("ready");
                     }
+                },
+                style: {
+                    fontFamily: 'inherit'
                 }
             },
 
@@ -185,24 +188,39 @@ define([
                     borderColor: '#000000',
                     allowPointSelect: true,
                     center: ["50%", "50%"],
+                    borderWidth: 0,
                     //set radius
-                    size: '75%',
+                    size: '240',
                     //labels inside the pie
                     dataLabels: {
                         enabled: true,
+                        useHTML: true,
                         formatter: function () {
-                            return '<span class="pie-label">' + this.y +'<span>';
+
+                            return '<div class="pie-label">' + this.point.homeLabel +'<div>';
+
                         },
                         style: {
-                            textShadow: false
+                            color: '#333',
+                            textShadow: false,
+                            fontWeight: "normal"
                         },
-                        distance: -30
+                        distance: -1
                     }
                 }
             },
 
             tooltip: {
+                backgroundColor: null,
+                borderWidth: 0,
+                shadow: false,
+                useHTML: true,
+                style: {
+                    padding: 0
+                },
+
                 formatter: function () {
+                    console.log(this);
                     return this.key + ': <b>' + this.y + '</b>';
                 }
             },
@@ -220,29 +238,35 @@ define([
                 name: 'Breeds',
                 data: [{
                     name: labels[self.language.toLowerCase()]['internationalMammalian'],
-                    color: '#006062',
-                    y: 400
+                    color: '#b1e4df',
+                    y: 400,
+                    homeLabel: 'A'
                 }, {
                     name: labels[self.language.toLowerCase()]['regionalMammalian'],
-                    color: '#2020A0',
-                    y: 416
+                    color: '#98dbd5',
+                    y: 416,
+                    homeLabel: 'B'
                 }, {
                     name: labels[self.language.toLowerCase()]['localMammalian'],
-                    color: '#622100',
-                    y: 4815
+                    color: '#64c9bf',
+                    y: 4815,
+                    homeLabel: 'C'
                 }, {
                     name: labels[self.language.toLowerCase()]['internationalAvian'],
-                    color: '#C1FFD5',
-                    y: 161
+                    color: '#cbedea',
+                    y: 161,
+                    homeLabel: 'D'
                 }, {
-                        name: labels[self.language.toLowerCase()]['regionalAvian'],
-                        color: '#82C0FF',
-                        y: 80
-                    }, {
-                        name: labels[self.language.toLowerCase()]['localAvian'],
-                        color: '#EC5300',
-                        y: 2307
-                    }
+                    name: labels[self.language.toLowerCase()]['regionalAvian'],
+                    color: '#e5f6f4',
+                    y: 80,
+                    homeLabel: 'E'
+                }, {
+                    name: labels[self.language.toLowerCase()]['localAvian'],
+                    color: '#7ed2ca',
+                    y: 2307,
+                    homeLabel: 'F'
+                }
                 ]
             }]
         };

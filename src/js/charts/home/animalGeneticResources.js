@@ -9,7 +9,7 @@ define([
 ], function (_, $, log, labels, Bridge, Highcharts, Formatter) {
 
     var s = {
-        HEIGHT: 200,
+        HEIGHT: 500,
         WIDTH: 300,
         process: []
     };
@@ -92,11 +92,13 @@ define([
         var chartConfig = {
             chart: {
                 type: 'bar',
-                margin: [0, 0, 0, 0],
                 events: {
                     load: function (event) {
                         self._trigger("ready");
                     }
+                },
+                style: {
+                    fontFamily: 'inherit'
                 }
             },
             title: {
@@ -112,11 +114,20 @@ define([
                 }
             },
             xAxis: {
+                tickWidth: 0,
+                lineColor: "#e6e6e6",
                 categories: [labels[self.language.toLowerCase()]['category1'], labels[self.language.toLowerCase()]['category2'], labels[self.language.toLowerCase()]['category3'], labels[self.language.toLowerCase()]['category4'], labels[self.language.toLowerCase()]['category5'], labels[self.language.toLowerCase()]['category6'], labels[self.language.toLowerCase()]['category7'], labels[self.language.toLowerCase()]['category8']],
             },
             yAxis: {
                 min: 0,
                 max : 100,
+                lineWidth: 1,
+                lineColor: "#e6e6e6",
+                tickWidth: 1,
+                tickPosition: 'inside',
+                tickLength: 5,
+                offset: 20,
+                opposite: true,
                 title: {
                     style: {
                         display: 'none'
@@ -141,7 +152,8 @@ define([
 
             plotOptions: {
                 series: {
-                    stacking: 'normal'
+                    stacking: 'normal',
+                    pointWidth: 27
                 }
             },
 
@@ -150,15 +162,15 @@ define([
                 {
                     name: labels[self.language.toLowerCase()]['unknown'],
                     data: [88, 80, 40, 94, 99, 81, 96, 63],
-                    color :"#C1CDCD"
+                    color :"#e1e1e1"
                 }, {
                 name: labels[self.language.toLowerCase()]['atRisk'],
                 data: [3, 2, 40, 2, 0, 14, 2, 20],
-                color :"#CD3333"
+                color :"#0d6cac"
                 }, {
                     name: labels[self.language.toLowerCase()]['notAtRisk'],
                     data: [9, 18, 20, 4, 1, 5, 2, 17],
-                    color :"#6495ED"
+                    color :"#64c9bf"
                 }]
         };
 
