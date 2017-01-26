@@ -9472,10 +9472,6 @@ button_new_2:before {
   #dadis .fx-sandbox.fao-holder ul li {
     margin-bottom: 0;
     left: 0; }
-  #dadis .fx-sandbox.fao-holder a {
-    color: red; }
-  #dadis .fx-sandbox.fao-holder a:focus, #dadis .fx-sandbox.fao-holder a:hover {
-    text-decoration: none; }
   #dadis .fx-sandbox.fao-holder .tree-holder {
     height: 150px;
     overflow: auto; }
@@ -9514,6 +9510,38 @@ button_new_2:before {
     width: 100% !important; }
   #dadis .fx-sandbox.fao-holder #fx-data-management-menu .container {
     width: 100% !important; }
+  #dadis .fx-sandbox.fao-holder .dadis-entry-point-card {
+    background-color: #d6e4eb; }
+    #dadis .fx-sandbox.fao-holder .dadis-entry-point-card .card-content {
+      background-color: transparent; }
+    #dadis .fx-sandbox.fao-holder .dadis-entry-point-card h3 {
+      font-size: 16px; }
+    #dadis .fx-sandbox.fao-holder .dadis-entry-point-card a {
+      color: #333; }
+      #dadis .fx-sandbox.fao-holder .dadis-entry-point-card a:hover, #dadis .fx-sandbox.fao-holder .dadis-entry-point-card a:focus, #dadis .fx-sandbox.fao-holder .dadis-entry-point-card a:active {
+        color: #333; }
+  #dadis .fx-sandbox.fao-holder .dadis-entry-point-img {
+    height: 124px;
+    width: 124px;
+    background-color: #e1e1e1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    margin: 0 auto; }
+    #dadis .fx-sandbox.fao-holder .dadis-entry-point-img:hover
+    #dadis .fx-sandbox.fao-holder .dadis-entry-point-img.bsc {
+      background-image: url(img/bsc.png); }
+    #dadis .fx-sandbox.fao-holder .dadis-entry-point-img.sr {
+      background-image: url(img/sr.png); }
+    #dadis .fx-sandbox.fao-holder .dadis-entry-point-img.tb {
+      background-image: url(img/tb.png); }
   #dadis .fx-sandbox.fao-holder .dadis-home-charts {
     padding-left: 0;
     padding-right: 0; }

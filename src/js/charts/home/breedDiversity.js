@@ -11,7 +11,7 @@ define([
 
     var s = {
         HEIGHT: 300,
-        WIDTH: 300,
+        WIDTH: 290,
         process: []
     };
 

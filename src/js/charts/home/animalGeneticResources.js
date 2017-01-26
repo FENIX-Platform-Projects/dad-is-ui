@@ -9,8 +9,8 @@ define([
 ], function (_, $, log, labels, Bridge, Highcharts, Formatter) {
 
     var s = {
-        HEIGHT: 500,
-        WIDTH: 300,
+        HEIGHT: 495,
+        WIDTH: 290,
         process: []
     };
 
@@ -151,6 +151,9 @@ define([
             },
 
             plotOptions: {
+                bar: {
+                    borderWidth: 0
+                },
                 series: {
                     stacking: 'normal',
                     pointWidth: 27

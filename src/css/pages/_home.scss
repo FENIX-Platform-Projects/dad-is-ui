@@ -1,5 +1,57 @@
 /* Homepage */
 
+// Entry Point
+
+.dadis-entry-point-card{
+  background-color: #d6e4eb;
+
+  .card-content{
+    background-color: transparent;
+  }
+
+  h3{
+    font-size: 16px;
+  }
+
+  a{
+    color: $fenix-text;
+
+    &:hover, &:focus, &:active{
+      color: $fenix-text;
+    }
+
+  }
+
+}
+
+.dadis-entry-point-img{
+  height: 124px;
+  width: 124px;
+  background-color: $fenix-hr;
+  @include fx-border-radius(50%);
+  background-position: 50% 50%;
+  @include animate();
+  margin: 0 auto;
+
+  &:hover
+
+
+  &.bsc{
+    background-image: url(img/bsc.png);
+  }
+
+  &.sr{
+    background-image: url(img/sr.png);
+  }
+
+  &.tb{
+    background-image: url(img/tb.png);
+  }
+
+}
+
+
+// Charts
 
 .dadis-home-charts{
   padding-left: 0;
