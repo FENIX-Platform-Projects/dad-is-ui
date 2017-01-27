@@ -7,8 +7,11 @@ define( function () {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
                 plotShadow: false,
-                width: 800,
-                height: 1200
+                width: 680,
+                height: 1200,
+                style: {
+                    fontFamily: 'inherit'
+                }
             },
             credits: false,
             colors: ['#088A68', '#0431B4', '#8A2908', '#CEF6CE', '#A9BCF5', '#FF8000'],
@@ -16,7 +19,7 @@ define( function () {
                 text: 'Number of local and transboundary breeds at regional level'
             },
             tooltip: {
-                formatter: function() {
+                formatter: function () {
                     return '<b>'+ this.point.name +'</b>: '+ this.y ;
                 }
             },
@@ -27,28 +30,27 @@ define( function () {
                 symbolHeight: 10,
                 symbolWidth: 10,
                 symbolRadius: 10,
-                y: -170,
-                x: -120,
-                itemMarginTop: 8,
-                itemMarginBottom: 8
+                y: -90,
+                x: -15,
+                itemMarginTop: 5,
+                itemMarginBottom: 5
             },
             plotOptions: {
                 pie: {
                     allowPointSelect: true,
                     cursor: 'pointer',
-                    size: 100,
+                    size: 180,
                     dataLabels: {
                         enabled: true,
-                        useHTML: true,
                         formatter: function () {
-                            return '<div class="pie-label">' + this.y +'<div>';
+                            return '<div>' + this.y +'<div>';
                         },
                         style: {
                             color: '#333',
                             textShadow: false,
                             fontWeight: "normal"
                         },
-                        distance: -1
+                        distance: 5
                     }
 
                 }
@@ -56,8 +58,7 @@ define( function () {
             series: [{
                 type: 'pie',
                 name: 'Africa',
-                center: [150, 100],
-                size: 150,
+                center: [150,120],
                 title: {
                     align: 'center',
                     format: '<b>{name}</b>',
@@ -76,8 +77,7 @@ define( function () {
             },{
                 type: 'pie',
                 name: 'Asia',
-                center: [450,100],
-                size: 150,
+                center: [450,120],
                 title: {
                     align: 'center',
                     format: '<b>{name}</b>',
@@ -96,8 +96,7 @@ define( function () {
             },{
                 type: 'pie',
                 name: 'Europe & the Caucasus',
-                center: [150,350],
-                size: 150,
+                center: [150,390],
                 title: {
                     align: 'center',
                     format: '<b>{name}</b>',
@@ -116,8 +115,7 @@ define( function () {
             },{
                 type: 'pie',
                 name: 'Latin America & the Carribean',
-                center: [450,350],
-                size: 150,
+                center: [450,390],
                 title: {
                     align: 'center',
                     format: '<b>{name}</b>',
@@ -136,8 +134,7 @@ define( function () {
             },{
                 type: 'pie',
                 name: 'Near & Middle East',
-                center: [150,600],
-                size: 150,
+                center: [150,660],
                 title: {
                     align: 'center',
                     format: '<b>{name}</b>',
@@ -156,8 +153,7 @@ define( function () {
             },{
                 type: 'pie',
                 name: 'North America',
-                center: [450,600],
-                size: 150,
+                center: [450,660],
                 title: {
                     align: 'center',
                     format: '<b>{name}</b>',
@@ -176,8 +172,7 @@ define( function () {
             },{
                 type: 'pie',
                 name: 'Southwest Pacific',
-                center: [150,850],
-                size: 150,
+                center: [150,930],
                 title: {
                     align: 'center',
                     format: '<b>{name}</b>',

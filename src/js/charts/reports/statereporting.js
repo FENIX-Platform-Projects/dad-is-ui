@@ -5,8 +5,11 @@ define( function () {
     return {
         chart: {
             type: 'bar',
-            width: 900,
-            height: 600
+            width: 680,
+            height: 600,
+            style: {
+                fontFamily: 'inherit'
+            }
         },
         colors: ['#BABABA', '#CCFFCC'],
         title: {

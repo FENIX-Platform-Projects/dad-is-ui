@@ -5,8 +5,11 @@ define( function () {
     return {
         chart: {
             type: 'column',
-            width: 800,
-            height: 900
+            width: 680,
+            height: 900,
+            style: {
+                fontFamily: 'inherit'
+            }
         },
         colors: ['#C0C0C0', '#C6D9F1', '#17375E'],
         title: {
@@ -39,15 +42,21 @@ define( function () {
             symbolRadius: 0,
         },
         tooltip: {
+            useHTML: true,
             headerFormat: '<b>{point.x}</b><br/>',
             pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
         },
         plotOptions: {
             column: {
+                borderWidth: 0,
                 stacking: 'normal',
                 dataLabels: {
                     enabled: true,
-                    color: 'white'
+                    style: {
+                        color: '#333',
+                        textShadow: false,
+                        fontWeight: "normal"
+                    }
                 }
             }
         },

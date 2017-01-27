@@ -7,8 +7,11 @@ define( function () {
             plotBackgroundColor: null,
             plotBorderWidth: null,
             plotShadow: false,
-            width: 600,
-            height: 600
+            width: 680,
+            height: 700,
+            style: {
+                fontFamily: 'inherit'
+            }
         },
         colors: ['#800000', '#FF0000', '#FF6600', '#FFCC00', '#000000', '#008080', '#C0C0C0'],
         credits: false,
@@ -21,14 +24,18 @@ define( function () {
                 return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
             }
         },
+
         legend: {
             layout: 'vertical',
             align: 'right',
             verticalAlign: 'bottom',
-            symbolHeight: 6,
-            symbolWidth: 6,
-            symbolRadius: 6,
-            y:-75
+            symbolHeight: 10,
+            symbolWidth: 10,
+            symbolRadius: 10,
+            y:-130,
+            x:-75,
+            itemMarginTop: 5,
+            itemMarginBottom: 5
         },
         plotOptions: {
             pie: {
@@ -53,8 +60,8 @@ define( function () {
         series: [{
             type: 'pie',
             name: 'All species',
-            center: [150, 100],
-            size: 150,
+            center: [150, 120],
+            size: 180,
             title: {
                 align: 'center',
                 format: '<b>{name}</b>',
@@ -74,8 +81,8 @@ define( function () {
         },{
             type: 'pie',
             name: 'Avian',
-            center: [450,100],
-            size: 150,
+            center: [450,120],
+            size: 180,
             title: {
                 align: 'center',
                 format: '<b>{name}</b>',
@@ -95,8 +102,8 @@ define( function () {
         },{
             type: 'pie',
             name: 'Mammalian',
-            center: [150,400],
-            size: 150,
+            center: [150,390],
+            size: 180,
             title: {
                 align: 'center',
                 format: '<b>{name}</b>',
