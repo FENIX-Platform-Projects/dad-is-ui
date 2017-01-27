@@ -77,7 +77,7 @@ define( function () {
             },{
                 type: 'pie',
                 name: 'Asia',
-                center: [450,120],
+                center: [470,120],
                 title: {
                     align: 'center',
                     format: '<b>{name}</b>',
@@ -115,7 +115,7 @@ define( function () {
             },{
                 type: 'pie',
                 name: 'Latin America & the Carribean',
-                center: [450,390],
+                center: [470,390],
                 title: {
                     align: 'center',
                     format: '<b>{name}</b>',
@@ -153,7 +153,7 @@ define( function () {
             },{
                 type: 'pie',
                 name: 'North America',
-                center: [450,660],
+                center: [470,660],
                 title: {
                     align: 'center',
                     format: '<b>{name}</b>',

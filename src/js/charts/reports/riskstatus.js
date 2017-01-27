@@ -90,7 +90,7 @@ define( function () {
         },{
             type: 'pie',
             name: 'Avian',
-            center: [450,120],
+            center: [470,120],
             size: 180,
             title: {
                 align: 'center',
