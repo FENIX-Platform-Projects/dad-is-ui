@@ -9679,8 +9679,14 @@ button_new_2:before {
   #dadis .fx-sandbox.fao-holder .dadis-reports-container {
     padding-left: 0;
     padding-right: 0; }
+    #dadis .fx-sandbox.fao-holder .dadis-reports-container .nav-pills li.active a {
+      color: white; }
+      #dadis .fx-sandbox.fao-holder .dadis-reports-container .nav-pills li.active a:hover, #dadis .fx-sandbox.fao-holder .dadis-reports-container .nav-pills li.active a:active, #dadis .fx-sandbox.fao-holder .dadis-reports-container .nav-pills li.active a:focus {
+        color: white; }
     #dadis .fx-sandbox.fao-holder .dadis-reports-container .elegant-card {
       background-color: white; }
+    #dadis .fx-sandbox.fao-holder .dadis-reports-container .tab-content .elegant-card {
+      padding-top: 20px; }
   #dadis .fx-sandbox.fao-holder #geneticresources .highcharts-text-outline, #dadis .fx-sandbox.fao-holder #riskstatus .highcharts-text-outline, #dadis .fx-sandbox.fao-holder #statereporting .highcharts-text-outline {
     display: none; }
   #dadis .fx-sandbox.fao-holder #riskstatus .pie-label, #dadis .fx-sandbox.fao-holder #riskstatus .label-legenda {
@@ -9707,6 +9713,13 @@ button_new_2:before {
     box-shadow: 1px 1px 2px #888;
     padding: 8px;
     z-index: 2; }
+  #dadis .fx-sandbox.fao-holder .nav > li.disabled > a {
+    color: #777; }
+  #dadis .fx-sandbox.fao-holder .fx-sandbox .nav > li.disabled > a:focus, #dadis .fx-sandbox.fao-holder .fx-sandbox .nav > li.disabled > a:hover {
+    color: #777;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: not-allowed; }
 
 #dadis #rightcolumn {
   width: 33.333%; }

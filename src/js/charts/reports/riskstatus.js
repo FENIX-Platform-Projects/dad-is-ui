@@ -20,7 +20,15 @@ define( function () {
             align: 'center'
         },
         tooltip: {
-            formatter: function() {
+            backgroundColor: null,
+            borderWidth: 0,
+            shadow: false,
+            useHTML: true,
+            style: {
+                padding: 0
+            },
+
+            formatter: function () {
                 return '<b>'+ this.point.name +'</b>: '+ this.y +' %';
             }
         },
@@ -41,6 +49,7 @@ define( function () {
             pie: {
                 allowPointSelect: true,
                 cursor: 'pointer',
+                borderWidth: 0,
                 dataLabels: {
                     enabled: true,
                     useHTML: true,

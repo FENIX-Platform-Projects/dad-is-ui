@@ -5,9 +5,35 @@
   padding-right: 0;
 
 
+  .nav-pills{
+
+    li.active{
+
+      a{
+        color:white;
+
+        &:hover, &:active, &:focus{
+          color:white;
+        }
+
+      }
+
+    }
+
+
+  }
+
 
   .elegant-card{
     background-color: white;
+  }
+
+  .tab-content{
+
+    .elegant-card{
+      padding-top: 20px;
+    }
+
   }
 
 }
@@ -52,6 +78,21 @@
   }
 
 }
+
+
+
+  .nav>li.disabled>a {
+    color: #777;
+  }
+
+  .nav>li.disabled>a:focus, .fx-sandbox .nav>li.disabled>a:hover {
+    color: #777;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: not-allowed;
+  }
+
+
 
 
 
