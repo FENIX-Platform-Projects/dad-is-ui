@@ -10,18 +10,18 @@ define( function () {
         title: {
             text: 'Proportions of national breed populations for which population data have been reported'
         },
-
         xAxis: {
-            /*
             labels: {
                 groupedOptions: [{
                     // first level option
                 }, {
                     // second level option
+                    align: 'right'
                 }],
-                rotation: 0
+                rotation: 0,
+                x: -5
             },
-            */
+
             categories: [{
                 name: "Southwest Pacific",
                 categories: ["Avian", "Mammalian"]
@@ -85,10 +85,10 @@ define( function () {
                 dataLabels: {
                     enabled: true,
                     color: '#000',
-                    style: {fontWeight: 'bolder'},
-                    formatter: function() {return this.x + ': ' + this.y},
+
+                    formatter: function() {return this.y},
                     inside: true,
-                    rotation: 270
+                    rotation: 0
                 }
             }
         },

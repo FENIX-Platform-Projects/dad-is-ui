@@ -34,9 +34,9 @@ define([
         if (!require.cache[require.resolveWeak("highcharts-grouped-categories")]) {
             require('highcharts-grouped-categories')(Highcharts);
         }
-//        if (!require.cache[require.resolveWeak("highcharts-pie-plugin")]) {
+        if (!require.cache[require.resolveWeak("highcharts-pie-plugin")]) {
             require('highcharts-pie-plugin')(Highcharts);
-//        }
+        }
 
     };
 
@@ -54,7 +54,6 @@ define([
     };
 
     DemoReports.prototype._unifiedPie = function (currentChart) {
-            console.log("currentChart", currentChart);
             $(currentChart.series[0].data).each(function(i, e) {
                 e.legendItem.on('click', function(event) {
                     var legendItem=e.name;

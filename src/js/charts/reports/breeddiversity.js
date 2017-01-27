@@ -8,6 +8,7 @@ define( function () {
                 plotBorderWidth: null,
                 plotShadow: false
             },
+            credits: false,
             colors: ['#088A68', '#0431B4', '#8A2908', '#CEF6CE', '#A9BCF5', '#FF8000'],
             title: {
                 text: 'Number of local and transboundary breeds at regional level'

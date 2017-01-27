@@ -9,6 +9,7 @@ define( function () {
             plotShadow: false
         },
         colors: ['#800000', '#FF0000', '#FF6600', '#FFCC00', '#000000', '#008080', '#C0C0C0'],
+        credits: false,
         title: {
             text: 'Proportions of the world\'s breeds by risk status category'
         },
