@@ -5372,7 +5372,8 @@ button_new_2:before {
   /* Radio Buttons */
   /* Checkbox Buttons */
   /* Homepage */
-  /* Datapage */ }
+  /* Datapage */
+  /* DADIS Reports */ }
   #dadis .fx-sandbox.fao-holder input[type="button"] {
     outline: none; }
   #dadis .fx-sandbox.fao-holder button:focus {
@@ -9675,6 +9676,11 @@ button_new_2:before {
       background-image: url(img/dataAnalysis.jpg); }
     #dadis .fx-sandbox.fao-holder .dadis-data-browse-card .card-up .dadis-data-img.standardReports {
       background-image: url(img/standardReports.jpg); }
+  #dadis .fx-sandbox.fao-holder .dadis-reports-container {
+    padding-left: 0;
+    padding-right: 0; }
+    #dadis .fx-sandbox.fao-holder .dadis-reports-container .elegant-card {
+      background-color: white; }
 
 #dadis #rightcolumn {
   width: 33.333%; }
