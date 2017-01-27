@@ -6,7 +6,9 @@ define( function () {
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
-                plotShadow: false
+                plotShadow: false,
+                width: 800,
+                height: 1200
             },
             credits: false,
             colors: ['#088A68', '#0431B4', '#8A2908', '#CEF6CE', '#A9BCF5', '#FF8000'],
@@ -22,10 +24,10 @@ define( function () {
                 layout: 'vertical',
                 align: 'right',
                 verticalAlign: 'bottom',
-                symbolHeight: 6,
-                symbolWidth: 6,
-                symbolRadius: 0,
-                y: -10,
+                symbolHeight: 10,
+                symbolWidth: 10,
+                symbolRadius: 10,
+                y: -170,
                 x: -120,
                 itemMarginTop: 8,
                 itemMarginBottom: 8
@@ -37,10 +39,18 @@ define( function () {
                     size: 100,
                     dataLabels: {
                         enabled: true,
-                        connectorWidth: 0,
-                        distance: 5,
-                        format: '{y}'
+                        useHTML: true,
+                        formatter: function () {
+                            return '<div class="pie-label">' + this.y +'<div>';
+                        },
+                        style: {
+                            color: '#333',
+                            textShadow: false,
+                            fontWeight: "normal"
+                        },
+                        distance: -1
                     }
+
                 }
             },
             series: [{

@@ -6,12 +6,15 @@ define( function () {
         chart: {
             plotBackgroundColor: null,
             plotBorderWidth: null,
-            plotShadow: false
+            plotShadow: false,
+            width: 600,
+            height: 600
         },
         colors: ['#800000', '#FF0000', '#FF6600', '#FFCC00', '#000000', '#008080', '#C0C0C0'],
         credits: false,
         title: {
-            text: 'Proportions of the world\'s breeds by risk status category'
+            text: 'Proportions of the world\'s breeds by risk status category',
+            align: 'center'
         },
         tooltip: {
             formatter: function() {
@@ -20,27 +23,31 @@ define( function () {
         },
         legend: {
             layout: 'vertical',
-                align: 'right',
-                verticalAlign: 'bottom',
-                symbolHeight: 6,
-                symbolWidth: 6,
-                symbolRadius: 0,
-                y: -50,
-                x: 50,
-                itemMarginTop: 8,
-                itemMarginBottom: 8
+            align: 'right',
+            verticalAlign: 'bottom',
+            symbolHeight: 6,
+            symbolWidth: 6,
+            symbolRadius: 6,
+            y:-75
         },
         plotOptions: {
             pie: {
                 allowPointSelect: true,
-                    cursor: 'pointer',
-                    size: 100,
-                    dataLabels: {
+                cursor: 'pointer',
+                dataLabels: {
                     enabled: true,
-                        connectorWidth: 0,
-                        distance: 5,
-                        format: '{y}%'
+                    useHTML: true,
+                    formatter: function () {
+                        return '<div class="pie-label">' + this.y +'%<div>';
+                    },
+                    style: {
+                        color: '#333',
+                        textShadow: false,
+                        fontWeight: "normal"
+                    },
+                    distance: -1
                 }
+
             }
         },
         series: [{
@@ -88,7 +95,7 @@ define( function () {
         },{
             type: 'pie',
             name: 'Mammalian',
-            center: [150,450],
+            center: [150,400],
             size: 150,
             title: {
                 align: 'center',

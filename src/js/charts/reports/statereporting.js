@@ -4,7 +4,9 @@ define( function () {
 
     return {
         chart: {
-            type: 'bar'
+            type: 'bar',
+            width: 900,
+            height: 600
         },
         colors: ['#BABABA', '#CCFFCC'],
         title: {

@@ -4,7 +4,9 @@ define( function () {
 
     return {
         chart: {
-            type: 'column'
+            type: 'column',
+            width: 800,
+            height: 900
         },
         colors: ['#C0C0C0', '#C6D9F1', '#17375E'],
         title: {
